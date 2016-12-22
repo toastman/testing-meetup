@@ -1,6 +1,6 @@
 @@ set
-    sauceKey        d6c8b377-b213-41de-8c54-0f1b9e6b2983
-    sauceUser       toastman
+    sauceKey        YOUR_KEY
+    sauceUser       YOUR_USER
     gridLogin       ${sauceUser}:${sauceKey}
     gridUrl         http://${gridLogin}@ondemand.saucelabs.com:80/wd/hub
     website         http://testapp.galenframework.com

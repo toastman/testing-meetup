@@ -1,0 +1,147 @@
+{
+  "testId" : "1-homepage.spec",
+  "name" : "homepage.spec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  homepage.spec --url http://testapp.galenframework.com/ --size 1024x768 --htmlreport reports --include desktop -Dwebdriver.chrome.driver=/usr/local/lib/node_modules/galenframework-cli/node_modules/chromedriver/lib/chromedriver/chromedriver",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: homepage.spec included tags: desktop",
+          "status" : "error",
+          "time" : 1482399125511,
+          "includedTags" : [ "desktop" ],
+          "sections" : [ {
+            "name" : "Skeleton",
+            "place" : {
+              "filePath" : "homepage.spec",
+              "lineNumber" : 8
+            },
+            "objects" : [ {
+              "name" : "header",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.spec",
+                  "lineNumber" : 11
+                },
+                "name" : "width 900px",
+                "highlight" : [ "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.spec",
+                  "lineNumber" : 12
+                },
+                "name" : "height ~ 69px",
+                "highlight" : [ "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.spec",
+                  "lineNumber" : 13
+                },
+                "name" : "centered horizontally inside screen 1px",
+                "highlight" : [ "header", "screen" ]
+              } ]
+            }, {
+              "name" : "menu",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.spec",
+                  "lineNumber" : 16
+                },
+                "name" : "aligned vertically all header",
+                "highlight" : [ "menu", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.spec",
+                  "lineNumber" : 17
+                },
+                "name" : "below header 0 to 1px",
+                "highlight" : [ "menu", "header" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "homepage.spec",
+                  "lineNumber" : 18
+                },
+                "name" : "height ~ 164px",
+                "errors" : [ "\"menu\" height is 63px which is not in range of 162 to 166px" ],
+                "highlight" : [ "menu" ]
+              } ]
+            }, {
+              "name" : "header-text",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.spec",
+                  "lineNumber" : 32
+                },
+                "name" : "inside header 5 to 22px top bottom",
+                "highlight" : [ "header-text", "header" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.spec",
+                  "lineNumber" : 33
+                },
+                "name" : "near header-icon 15 to 30px right",
+                "highlight" : [ "header-text", "header-icon" ]
+              } ]
+            }, {
+              "name" : "content",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.spec",
+                  "lineNumber" : 36
+                },
+                "name" : "aligned vertically all menu",
+                "highlight" : [ "content", "menu" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.spec",
+                  "lineNumber" : 37
+                },
+                "name" : "below menu 0 to 1px",
+                "highlight" : [ "content", "menu" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "header-icon" : {
+              "area" : [ 62, 13, 48, 48 ]
+            },
+            "header" : {
+              "area" : [ 62, 0, 900, 69 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 1024, 733 ]
+            },
+            "header-text" : {
+              "area" : [ 132, 20, 629, 39 ]
+            },
+            "menu" : {
+              "area" : [ 62, 70, 900, 63 ]
+            },
+            "content" : {
+              "area" : [ 62, 133, 900, 450 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1482399124223,
+        "type" : "node"
+      } ],
+      "time" : 1482399121351,
+      "type" : "node"
+    } ]
+  }
+}

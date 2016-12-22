@@ -1,0 +1,17 @@
+{
+  "tests" : [ {
+    "name" : "homepage.spec",
+    "startedAt" : 1482399121348,
+    "endedAt" : 1482399125631,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 9,
+      "errors" : 1,
+      "warnings" : 0,
+      "total" : 10
+    },
+    "testId" : "1-homepage.spec",
+    "failed" : true,
+    "duration" : 4283
+  } ]
+}

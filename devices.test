@@ -1,0 +1,10 @@
+@@ Table devices
+    | deviceName  | size     | tags     |
+    | mobile      | 450x700  | mobile   |
+    | tablet      | 600x800  | tablet   |
+    | desktop     | 1024x768 | desktop  |
+
+@@ Parameterized using devices
+Home page on ${deviceName}
+    http://testapp.galenframework.com ${size}
+        check homepage.spec --include ${tags}
